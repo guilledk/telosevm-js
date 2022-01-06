@@ -343,6 +343,8 @@ export class TelosEvmApi {
       data
     }
 
+    console.log(txData);
+
     const tx = new Transaction(txData, { common: this.chainConfig })
 
     if (rawSign) {
